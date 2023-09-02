@@ -1,0 +1,6 @@
+stock_commission_bought = float(input())
+stock_commission_sold
+number_of_shares_purchased
+share_price
+number_of_shares_sold
+share_sold
