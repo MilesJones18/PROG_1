@@ -1,4 +1,4 @@
-print(f"***** Welcome to the stock profit calculator ***** \n" )
+print(f"***** Welcome to the stock profit calculator *****\n" )
 stock_commission_bought = float(input("Enter the commission for the bought shares: "))
 number_of_shares_purchased = int(input("Enter the number of shares purchased: "))
 share_price =  float(input("Enter the buy price per share: "))
@@ -26,9 +26,13 @@ total_sold = price_sold + commission_sold_total
 profit = total_sold - total_paid
 
 
-print(f"Price paid: ${price_paid:,.2f}")
-print(f"Commission paid: ${commission_bought_total:,.2f}")
-print(f"Sell amount: ${price_sold:,.2f}")
-print(f"Commission paid: ${commission_sold_total:,.2f}")
+print(f"Commission paid: ${commission_bought_total:,.2f}\n")
+print(f"Price paid: ${price_paid:,.2f}\n")
+print(f"Commission paid: ${commission_sold_total:,.2f}\n")
+print(f"Sell amount: ${price_sold:,.2f}\n")
 
-print(f"Your profit is: ${profit:,.2f}")
+
+if profit < 1:
+    print(f"Your loss is ${profit:,.2f}")
+else:
+    print(f"Your profit is: ${profit:,.2f}")
