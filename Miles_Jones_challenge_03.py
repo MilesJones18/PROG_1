@@ -54,13 +54,13 @@ else:
 
 
 if correct == 5:
-    print("Wow! You did an awesome job!")
+    print("Wow! Congratulations, you escaped the room of many riddles.")
 
 elif correct == 3 or correct == 4:
-    print("Congratulations! You escaped the room!")
+    print("Congratulations, you escaped the room of many riddles.")
 
 elif incorrect == 3:
-    print("I'm sorry, you failed.")
+    print("Unfortunately, you did not escape the room of many riddles.")
 
 elif incorrect == 5 :
     print("I'm sorry, you suck.")
