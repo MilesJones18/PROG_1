@@ -6,23 +6,23 @@ stock_commission_sold = float(input("Enter the commission percentage for the sol
 number_of_shares_sold = int(input("Enter the number of shares sold: "))
 share_sold = float(input("Enter the sell price per share: "))
 
-
+'''Buy calculations'''
 price_paid = number_of_shares_purchased * share_price
 commission_bought = stock_commission_bought / 100
 commission_bought_total = price_paid * commission_bought
 price_paid = number_of_shares_purchased * share_price + commission_bought_total
 
-
+'''Sell calculations'''
 price_sold = number_of_shares_sold * share_sold
 commission_sold = stock_commission_sold / 100
 commission_sold_total = price_sold * commission_sold
 price_sold = number_of_shares_sold * share_sold + commission_sold_total
 
-
+'''Total calculations'''
 total_paid = price_paid + commission_bought_total
 total_sold = price_sold + commission_sold_total
 
-
+'''Profit calculations'''
 profit = total_sold - total_paid
 
 
