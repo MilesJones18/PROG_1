@@ -1,5 +1,4 @@
 correct = 0
-riddle = 1
 
 
 game_choice = input("Do you want to play a game? ")
@@ -19,7 +18,7 @@ while game_choice.lower() != 'no':
 
     game_choice = input("Do you want to answer another riddle? ")
     if game_choice == 'no':
-        print(f"You got {correct} correct.")
+        print(f"You answered {correct}/5 and got {correct}/5 correct")
         break
 
 
@@ -34,8 +33,9 @@ while game_choice.lower() != 'no':
 
     game_choice = input("Do you want to answer another riddle? ")
     if game_choice == 'no':
-        print(f"You got {correct} correct.")
+        print(f"You answered {correct}/5 and got {correct}/5 correct")
         break
+
 
     rid3 = input("What kind of band never plays music? ")
     if rid3.lower() == "a rubber band":
@@ -48,8 +48,9 @@ while game_choice.lower() != 'no':
 
     game_choice = input("Do you want to answer another riddle? ")
     if game_choice == 'no':
-        print(f"You got {correct} correct.")
+        print(f"You answered {correct}/5 and got {correct}/5 correct")
         break
+
 
     rid4 = input("What is the end of everything? ")
     if rid4.lower() == "g":
@@ -62,8 +63,9 @@ while game_choice.lower() != 'no':
 
     game_choice = input("Do you want to answer another riddle? ")
     if game_choice == 'no':
-        print(f"You got {correct} correct.")
+        print(f"You answered {correct}/5 and got {correct}/5 correct")
         break
+
 
     rid5 = input("When is a door no longer a door? ")
     if rid5.lower() == "when it is ajar" or rid5.lower() == "when its ajar":
@@ -76,7 +78,7 @@ while game_choice.lower() != 'no':
     
     game_choice = input("Do you want to answer another riddle? ")
     if game_choice == 'no':
-        print(f"You got {correct} correct.")
+        print(f"You answered {correct}/5 and got {correct}/5 correct")
         break
 
         
