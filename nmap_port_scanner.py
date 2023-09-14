@@ -9,10 +9,10 @@ open_ports = []
 
 start = time.time()
 
-target ='google.com'
+target ='localhost'
 
 
-def portscan(port):
+def portscan(port):  # Checks each port using sockets.
     try:
         sock = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
         sock.connect((target, port))
@@ -21,7 +21,7 @@ def portscan(port):
         return False
 
 
-def get_ports(mode):
+def get_ports(mode):  # Allows the user to chose which ports they would like to scan.
     if mode == 1:
         for port in range(1, 1024):
             q.put(port)
@@ -40,7 +40,7 @@ def get_ports(mode):
             q.put(port)
 
 
-def worker():
+def worker(): 
     while not q.empty():
         port = q.get()
         if portscan(port):
