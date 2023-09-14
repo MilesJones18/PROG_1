@@ -9,8 +9,7 @@ open_ports = []
 
 start = time.time()
 
-target ='127.0.0.1'
-
+target ='google.com'
 
 
 def portscan(port):
@@ -46,7 +45,7 @@ def worker():
         port = q.get()
         if portscan(port):
             print("Port {} is open".format(port))
-            open_ports.append()
+            open_ports.append(port)
         else:
             print("Port {} is closed".format(port))
 
@@ -70,7 +69,7 @@ def run_scanner(threads, mode):
     print(f"Open ports are: {open_ports}")
 
 
-run_scanner(100, 2)
+run_scanner(100, 3)
 
 end = time.time()
 totaltime = end - start
