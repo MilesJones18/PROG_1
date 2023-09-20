@@ -9,6 +9,6 @@ def formula(time):  # This function is the formula for the distance traveled.
     return answer
 
 
-for num in range(1, user_time + 1):  # Iterates from 1 to the user inputted time and calls the formula function.
-    print(f"{num} second/s: {formula(num):.1f} meters")  # Prints each iteration of the loop.
+for sec in range(1, user_time + 1):  # Iterates from 1 to the user inputted time and calls the formula function.
+    print(f"{sec} second/s: {formula(sec):.1f} meters")  # Prints each iteration of the loop.
 
