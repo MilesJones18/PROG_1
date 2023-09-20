@@ -1,4 +1,5 @@
-'''Take a users input of time in seconds, plugs it into the formula d = 0.5 * 9.8 * t^2, where t is the users input.'''
+'''Take a users input of time in seconds, plugs it into the formula d = 0.5 * 9.8 * t^2, where t is the users input. 
+    Then, iterates through each second and prints out the distance traveled.'''
 
 user_time = int(input("Please enter the time in seconds: "))  # First and foremost gets the users input.
 
