@@ -6,19 +6,14 @@ import random
 
 
 class Humanoids:
-    def __init__(self, Hgt, Wgt, HClr, EClr, Str, Dex, Cons, Int, Wis, Char):
-        self.Hgt = Hgt,
-        self.Wgt = Wgt,
-        self.Hclr = HClr,
-        self.Eclr = EClr,
-        self.Str = Str,
-        self.Dex = Dex,
-        self.Cons = Cons,
-        self.Int = Int,
-        self.Wis = Wis,
-        self.Char = Char,
+    def __init__(self):
+        self.Hgt = input("Please enter your height: ")
+        self.Wgt = input("Please enter your weight: ")
+        self.Hclr = input("Please enter your hair color: ")
+        self.Eclr = input("Please enter your eye color: "),
 
-
+    def displayCurrent(self):
+        print(f"Height: {self.Hgt}\nWeight: {self.Wgt}\nHair Color: {self.Hclr}\nEye color: {self.Eclr}\n")
 
 
 class Humans(Humanoids):
@@ -37,12 +32,9 @@ class Dwarves(Humanoids):
 
 
 def characterCreation():
-    print(f"Welcome to character creation!")
-    Humanoids(Hgt=height,Wgt=weight,HClr=hclr,EClr=eclr)
-    height = input("Please enter your height: ")
-    weight = int(input("Please enter your weight: "))
-    hclr = input("Please enter your eye color: ")
-    eclr = input("Please enter your hair color: ")
+    print(f"Welcome to character creation!\n")
+    character = Humanoids()
+    character.displayCurrent()
                
 
 
