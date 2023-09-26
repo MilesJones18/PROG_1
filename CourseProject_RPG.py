@@ -20,29 +20,29 @@ class Humanoids:
 
 
 
-class Humans:
+
+class Humans(Humanoids):
     pass
 
 
 
-class Elves:
+class Elves(Humanoids):
     pass
 
 
 
-class Dwarves:
+class Dwarves(Humanoids):
     pass
 
 
 
 def characterCreation():
-    print(f"Welcome to character creation! \n You may choose 1 of 3 races: \n 1.Humans \n 2.Elves \n 3.Dwarves")
-    userInput = input("Please choose a race: ")
-    if userInput == '1':
-        userInput = input("Please enter your height: ")
-        userInput = int(input("Please enter your weight: "))
-        userInput = input("Please enter your eye color: ")
-        userInput = input("Please enter your hair color: ")
+    print(f"Welcome to character creation!")
+    Humanoids(Hgt=height,Wgt=weight,HClr=hclr,EClr=eclr)
+    height = input("Please enter your height: ")
+    weight = int(input("Please enter your weight: "))
+    hclr = input("Please enter your eye color: ")
+    eclr = input("Please enter your hair color: ")
                
 
 
