@@ -1,3 +1,8 @@
-sold = 256.752
+def main():
+    print("The answer is", magic(5))
 
-print(sold)
+def magic(num):
+    answer = num + 2 * 10
+    return answer
+
+main()
