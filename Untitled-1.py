@@ -1,8 +1,12 @@
-def main():
-    print("The answer is", magic(5))
+def write_line():
+    f = open("/Users/milesjones/Documents/PROG_1/test.txt","w")
+    f.write("Hello World")
 
-def magic(num):
-    answer = num + 2 * 10
-    return answer
 
-main()
+def read_files_by_line():
+    f = open("/Users/milesjones/Documents/PROG_1/test.txt","r")
+    line_one = f.readline()
+    print(line_one)
+
+write_line()
+read_files_by_line()

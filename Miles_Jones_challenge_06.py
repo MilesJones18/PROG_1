@@ -11,8 +11,9 @@ def randomNum(input):
         f.write(str(rand) + "\n")
 
 
+
 if __name__ == "__main__":
-    f = open(r"D:\StudentTestCodeFiles\numbers.txt", "w")  # Change to D:\StudentTestCodeFiles\numbers.txt before turning in.
+    f = open("/Users/milesjones/Documents/PROG_1/numbers.txt","w") # Change to D:\StudentTestCodeFiles\numbers.txt before turning in.
     while True:
         try:
             userInput = int(input("Please enter the max amount written to the file: "))
