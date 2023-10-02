@@ -30,3 +30,35 @@ print(my_list)
 
 del my_list[1]
 print(my_list)
+
+this_is_a_list = "I love python!"
+
+length = len(my_list)
+print(length)
+print(my_combo_list[3])
+print(my_combo_list.index('Car'))
+
+
+my_list = [6, 2, 8, 10, 20, 5, 15,]
+my_list.sort()
+print(my_list)
+
+my_list.reverse()
+print(my_list)
+
+
+# Gradebook with 10 grades, 0 - 100
+# Store grades into a list
+
+grades = []
+
+def gradebook():
+    for i in range(0, 10):
+        grade = input("Please the first 10 grades (0 - 100): ")
+        grades.append(grade)
+    return grades
+
+
+if __name__ == "__main__":
+    result = gradebook()
+    print(result)
