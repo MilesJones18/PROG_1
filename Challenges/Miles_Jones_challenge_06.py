@@ -3,6 +3,7 @@ Write a program that writes a series of random numbers to a file. Each number sh
 Let the user specify how many numbers the file will hold.
 Use exception handling to catch an invalid input from the user.
 '''
+
 import random
 
 
@@ -23,7 +24,7 @@ def main():
         except ValueError:
             print("Invalid input, please enter an integer.")
         else:
-            break
+           break
     f.close()
 
 
