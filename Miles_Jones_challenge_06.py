@@ -7,13 +7,14 @@ import random
 
 
 def randomNum(input):
+    f = open("numbers.txt","w")
     for i in range(1, input + 1):
         rand = random.randint(1, 500)
         f.write(str(rand) + "\n")
+    f.close()
 
 
-
-if __name__ == "__main__":
+def main():
     f = open("numbers.txt","w") # Change to D:\StudentTestCodeFiles\numbers.txt before turning in.
     while True:
         try:
@@ -23,3 +24,8 @@ if __name__ == "__main__":
             print("Invalid input, please enter an integer.")
         else:
             break
+    f.close()
+
+
+if __name__ == "__main__":
+    main()
