@@ -1,6 +1,3 @@
-
-
-
 def stored_passwords(passCheck):
     badPass = ('123456','123456789','12345','qwerty',
                'password','12345678','111111','123123',
