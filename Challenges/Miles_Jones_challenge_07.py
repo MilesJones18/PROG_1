@@ -15,7 +15,7 @@ def stored_passwords(passCheck):
 
 
     if passCheck in badPass:
-        found = "Your password is too common.  Please consider changing it."
+        found = f"{passCheck} at index {badPass.index(passCheck)}. Your password is too common.  Please consider changing it."
         return found
     else:
         notFound = "This is a strong password"
