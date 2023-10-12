@@ -21,13 +21,17 @@ def stored_passwords(passCheck):
         notFound = "This is a strong password"
         return notFound
 
+
         
 
 def getUserPass():
     userName = input("Please enter a username: ")
-    userPass = input("Please enter a password: ")
-    result = stored_passwords(userPass)
-    print(result)
+    while True:
+        userPass = input("Please enter a password: ")
+        result = stored_passwords(userPass)
+        print(result)
+        if result == "This is a strong password":
+            break
     
 
 
