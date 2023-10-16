@@ -44,10 +44,16 @@ def conversion(input):
             
 
 def main():
-    userInput = input("Please enter a string: ")
+    quit_con = ['quit', 'q', 'break']
+    while True:
 
-    result = conversion(userInput)
-    print(result)
+        userInput = input("Please enter a string: ")
+        
+        if userInput in quit_con:
+            break
+        else:
+            result = conversion(userInput)
+            print(result)
 
 
 
