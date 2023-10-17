@@ -11,14 +11,12 @@ def splitWord():
     with open('Word Frequency.txt','r') as f:
         for pos, l_num in enumerate(f):
             if pos in specificLines:
-                content = l_num.replace(', ', ' , ').split()
+                content = l_num.replace(', ', ' . ').split()
                 for words in content:
                     if words == ',':
                         continue
                     else:
                         word.append(words)
-
-
     return word
 
 
