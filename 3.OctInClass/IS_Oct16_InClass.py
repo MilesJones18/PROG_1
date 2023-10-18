@@ -22,9 +22,10 @@ while True:
             print(f"Grade {num}: {i}")
             num += 1
 
-        grade_change = input("Which grade would you like to change: ")
+        grade_change = int(input("Which grade would you like to change: "))
         grade_change = grade_change - 1
         new_value = int(input("Enter the new grade: "))
+        new_value = new_value - 1
 
         for key in grade_book:
             grade_book[student_name][grade_change] = new_value
