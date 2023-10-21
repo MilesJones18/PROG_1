@@ -10,8 +10,10 @@ def myDictionary(request):
                 'Toyota':['Camry','Corolla','Supra',
                           'Tundra']}
     
-    if request in vehicles.values():
-        return vehicles
+    for brand, model in vehicles.items():
+        if request in model:
+            return brand
+        
 
 
 
