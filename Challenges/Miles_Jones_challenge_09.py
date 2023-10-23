@@ -5,6 +5,7 @@ Display the frequency of each word to stdout as a formatted table.
 '''
 
 
+
 '''
 This function enumerates through each line in the file, it then checks for the lines in the enumerated file.
 Next, it splits each word. Finally it loops through each word appending it to the words list, 
@@ -20,6 +21,7 @@ def splitWord():
                 for words in content:  
                     word.append(words.strip('.,'))
     return word  
+
 
 
 
