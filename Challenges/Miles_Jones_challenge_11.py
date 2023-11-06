@@ -82,7 +82,7 @@ def main():
     cust3 = Customer('Jane', '5612 UTSA Blvd', '210-633-1423', 3, True)
 
     print('----|Name|----|Address|----|Phone #|----|Customer #|----|Mail|----')
-    print(f'     {cust1.get_name()}   {cust1.get_address()}  {cust1.get_phone_num()}       {cust1.get_cust_num()}          {cust1.get_mail()}')
+    print(f'     {cust1.get_name()}   {cust1.get_address()}    {cust1.get_phone_num()}     {cust1.get_cust_num()}          {cust1.get_mail()}')
     print(f'     {cust2.get_name()}   {cust2.get_address()}  {cust2.get_phone_num()}     {cust2.get_cust_num()}          {cust2.get_mail()}')
     print(f'     {cust3.get_name()}   {cust3.get_address()}  {cust3.get_phone_num()}     {cust3.get_cust_num()}          {cust3.get_mail()}')
 
