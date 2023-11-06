@@ -12,7 +12,7 @@ class Person():
 
     ''' Initializes the name, address and phone number data attributes. '''
 
-    def __init__(self, name, address, phone_num):  # Initializes the name, address and phone number data attributes.
+    def __init__(self, name, address, phone_num):  
         self.__name = name
         self.__address = address
         self.__phone_num = phone_num
