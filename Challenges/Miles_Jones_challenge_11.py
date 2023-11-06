@@ -20,13 +20,13 @@ class Person():
 
     ''' This block sets values to the attributes. '''
 
-    def set_name(self, name): 
+    def set_name(self, name: str): 
         self.__name = name
     
-    def set_address(self, address):
+    def set_address(self, address: str):
         self.__address = address
     
-    def set_phone_num(self, phone_num):
+    def set_phone_num(self, phone_num: str):
         self.__phone_num = phone_num
 
 
@@ -58,10 +58,10 @@ class Customer(Person):
     
     ''' Sets the customer attributes. '''
 
-    def set_cust_num(self, cust_num):
+    def set_cust_num(self, cust_num: int):
         self.__cust_num = cust_num
 
-    def set_mail(self, mail):
+    def set_mail(self, mail: bool):
         self.__mail = mail
 
     
