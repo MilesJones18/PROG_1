@@ -7,11 +7,11 @@ Test: Use a number less than 100 and greater than 0.
 
 
 def sumAll(n):
-    #base case
+    # This is the base case, if n = 1, return 1.
     if n == 1:
         return 1
 
-    #recursion
+    # This is the recursion case, returns n + n-1.
     else:
         return n + sumAll(n-1)
 
