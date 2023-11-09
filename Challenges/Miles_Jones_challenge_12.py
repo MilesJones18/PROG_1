@@ -19,4 +19,4 @@ def sumAll(n):
 if __name__ == '__main__':
     input = int(input('Please enter a positive number: '))
     result = sumAll(input)
-    print(result)
+    print(f"Sum: {result}")
