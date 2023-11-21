@@ -2,7 +2,7 @@ import re
 
 
 
-pattern = r"^(?=.*?[A-Z])(?=.*?[a-z])(?=.*?[0-9])(?=.*?[#?!@$%^&*-]).{8,}$"
+pattern = r"^(?=.*?[A-Z])(?=.*?[a-z])(?=.*?[0-9])(?=.*?[@#$%*!]).{8,}$"
 
 print("Please enter a password\nMust include:\n* 8-21 characters\n* Letters & numbers\n* Upper & lowercase\n* Special characters (@#$%*!)")
 while True:
