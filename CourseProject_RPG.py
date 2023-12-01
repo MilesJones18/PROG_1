@@ -95,28 +95,51 @@ class Humans(Humanoids):
     def __init__(self, height, weight, hClr, eClr, str, dex, cons, int, wis, char):
         Humanoids.__init__(self, height, weight, hClr, eClr, str, dex, cons, int, wis, char)
 
-    def humanAtt():
+        strength = self.get_str()
+        dexterity = self.get_dex()
+        constitution = self.get_cons()
+        intelligence = self.get_int()
+        wisdom = self.get_wis()
+        charisma = self.get_char()
+
+        
         usrInput = input('Please choose an attribute to +2 too: ').lower()
-        if usrInput == 'str':
-            Humans.set_str(+2)
-        if usrInput == 'dex':
-            self.set_dex() + 2
-        if usrInput == 'cons':
-            self.set_cons() + 2
-        if usrInput == 'int':
-            self.set_int() + 2
-        if usrInput == 'wis':
-            self.set_wis() + 2
-        if usrInput == 'char':
-            self.set_char() + 2
+        if usrInput == 'str' | 'strength':
+            strength + 2
+        if usrInput == 'dex' | 'dexterity':
+            dexterity + 2
+        if usrInput == 'cons' | 'constitution':
+            constitution + 2
+        if usrInput == 'int' | 'intelligence':
+            intelligence + 2
+        if usrInput == 'wis' | 'wisdom':
+            wisdom + 2
+        if usrInput == 'char' | 'charisma':
+            charisma + 2
 
 
 class Elf(Humanoids):
-    pass
+    def __init__(self, height, weight, hClr, eClr, str, dex, cons, int, wis, char):
+        Humanoids.__init__(self, height, weight, hClr, eClr, str, dex, cons, int, wis, char)
+
+        dexterity = self.get_dex()
+        charisma = self.get_char()
+
+        dexterity + 2
+        charisma + 2
 
 
 class Dwarf(Humanoids):
-    pass
+    def __init__(self, height, weight, hClr, eClr, str, dex, cons, int, wis, char):
+        Humanoids.__init__(self, height, weight, hClr, eClr, str, dex, cons, int, wis, char)
+
+        strength = self.get_str()
+        constitution = self.get_cons()
+        charisma = self.get_char()
+
+        strength + 2
+        constitution + 2
+        charisma - 2
 
 
 
@@ -127,21 +150,91 @@ if __name__ == '__main__':
             player = Humans(height=input('Please enter a height: '),
                             weight=input('Please enter your weight: '),
                             hClr=input('Please enter your hair color: '),
-                            eClr=input('Please enter your eclr: '),
+                            eClr=input('Please enter your eye color: '),
                             str=random.randint(1,19),
                             dex=random.randint(1,19),
                             cons=random.randint(1,19),
                             int=random.randint(1,19),
                             wis=random.randint(1,19),
                             char=random.randint(1,19))
-            Humans.humanAtt()
+            print((f'|------Attributes----------|\n'
+                   '\n'
+                   f'Height: {player.get_height()}\n'
+                   f'Weight: {player.get_weight()}\n'
+                   f'Hair clr: {player.get_hClr()}\n'
+                   f'Eye clr: {player.get_eClr()}\n'
+                   '\n'
+                   f'|---------Stats----------|\n'
+                   '\n'
+                   f'Strength: {player.get_str()}\n'
+                   f'Dexterity: {player.get_dex()}\n'
+                   f'Constitution: {player.get_cons()}\n'
+                   f'Intelligence: {player.get_int()}\n'
+                   f'Wisdom: {player.get_wis()}\n'
+                   f'Charisma: {player.get_char()}\n'))
             break
         if race == '2':
-            player = Elf()
+            player = Elf(height=input('Please enter a height: '),
+                        weight=input('Please enter your weight: '),
+                        hClr=input('Please enter your hair color: '),
+                        eClr=input('Please enter your eye color: '),
+                        str=random.randint(1,19),
+                        dex=random.randint(1,19),
+                        cons=random.randint(1,19),
+                        int=random.randint(1,19),
+                        wis=random.randint(1,19),
+                        char=random.randint(1,19))
+            print((f'|------Attributes----------|\n'
+                   '\n'
+                   f'Height: {player.get_height()}\n'
+                   f'Weight: {player.get_weight()}\n'
+                   f'Hair clr: {player.get_hClr()}\n'
+                   f'Eye clr: {player.get_eClr()}\n'
+                   '\n'
+                   f'|---------Stats----------|\n'
+                   '\n'
+                   f'Strength: {player.get_str()}\n'
+                   f'Dexterity: {player.get_dex()}\n'
+                   f'Constitution: {player.get_cons()}\n'
+                   f'Intelligence: {player.get_int()}\n'
+                   f'Wisdom: {player.get_wis()}\n'
+                   f'Charisma: {player.get_char()}\n'
+                   f'|--------Special----------|\n'
+                   '\n'
+                   f'100% Resistance to sleep (cant be put to sleep)\n'))
             break
         if race == '3':
-            player == Dwarf()
+            player = Dwarf(height=input('Please enter a height: '),
+                            weight=input('Please enter your weight: '),
+                            hClr=input('Please enter your hair color: '),
+                            eClr=input('Please enter your eye color: '),
+                            str=random.randint(1,19),
+                            dex=random.randint(1,19),
+                            cons=random.randint(1,19),
+                            int=random.randint(1,19),
+                            wis=random.randint(1,19),
+                            char=random.randint(1,19))
+            print((f'|------Attributes----------|\n'
+                   '\n'
+                   f'Height: {player.get_height()}\n'
+                   f'Weight: {player.get_weight()}\n'
+                   f'Hair clr: {player.get_hClr()}\n'
+                   f'Eye clr: {player.get_eClr()}\n'
+                   '\n'
+                   f'|---------Stats----------|\n'
+                   '\n'
+                   f'Strength: {player.get_str()}\n'
+                   f'Dexterity: {player.get_dex()}\n'
+                   f'Constitution: {player.get_cons()}\n'
+                   f'Intelligence: {player.get_int()}\n'
+                   f'Wisdom: {player.get_wis()}\n'
+                   f'Charisma: {player.get_char()}\n'
+                   '\n'
+                   f'|--------Special----------|\n'
+                   '\n'
+                   '20% Resistance to magic\n'))
             break
         else:
             print('Please enter a number 1-3')
+
 
