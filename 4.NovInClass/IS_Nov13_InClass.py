@@ -26,7 +26,7 @@ else:
     print("That is not a valid filepath.")
 
 
-pattern = r"^([A-z)-9]+:+\\)([A-z0-9]+\\)*([A-z0-9]+.txt|.zip)$"
+pattern = r"^([A-z0-9]+:+\\)([A-z0-9]+\\)*([A-z0-9]+.txt|.zip)$"
 
 file_path2 = input("Enter the file path to test if it is valid: ")
 
